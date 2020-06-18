@@ -30,7 +30,7 @@ else
 	EXECUTABLE		:= olcRelayRace
 	LIBRARIES		:= -lm -lX11 -lGL -lpthread -lpng -lstdc++fs
 	PLATFORM		:= linux
-	CLEAN_COMMAND 	:= -rm $(BIN)/* $(OBJ)/$(PLATFORM)/*.o
+	CLEAN_COMMAND 	:= -rm -r $(BIN)/* $(OBJ)/*/*
 	LINK_FLAGS		:= 
 endif
 
