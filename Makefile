@@ -46,7 +46,6 @@ clean:
 
 # Compile only
 $(OBJ)/$(PLATFORM)%.o : $(SRC)%.cpp $(DEPENDENCIES)
-	@echo $(SRC)
 	$(CXX) $(CXX_FLAGS) $(INC_FLAG) -c -o $@ $<
 
 # Link the object files and libraries
